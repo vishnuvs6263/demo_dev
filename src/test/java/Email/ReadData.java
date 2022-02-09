@@ -18,6 +18,7 @@ public class ReadData {
 		HSSFWorkbook wb = new HSSFWorkbook(fis);
 		HSSFSheet sheet = wb.getSheet("Sheet1");
 		Iterator<Row> rowIT = sheet.iterator();
+		System.out.println();
 		rowIT.next();
 		ArrayList<String> list = new ArrayList<String>();
 		while (rowIT.hasNext()) {
